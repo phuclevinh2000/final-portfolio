@@ -1,0 +1,144 @@
+@import "../../global.scss";
+
+.portfolio{
+    font-family: 'Nunito', sans-serif;
+    padding-top: 65px;
+    @include mobile{
+        margin-top: -60px;
+    }
+
+    .title{
+        font-family: 'Halant', sans-serif;
+        text-align: center;
+        font-size: 64px;
+        font-weight: bold;
+        color: $darkgrey;
+        @include mobile{
+            padding-left: 0;
+            align-items: center;
+            font-size: 40px;
+         }
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        @include mobile{
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-basis: 33.333333%;
+            // padding-top: 50px;
+            padding-bottom: 200px;
+            height: 300px;
+        }
+        .code{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+           img{
+               height: 130px;
+               width: 200px;
+               border-radius: 20px;
+               border: 1px solid $darkgrey;
+           }
+           .box{
+               display: flex;
+               flex-direction: column;
+               background-color: $lightblue;
+               padding: 20px;
+               border-radius: 20px;
+               align-items: center;
+               transition: 0.4s;
+               &:hover{
+                    transform: scale(1.1);
+                }
+               .usedtitle{
+                    background-color: $lightblue;
+                    font-size: 23px;
+                    text-align: center;
+                    color: $darkgrey;
+                    font-weight: bold;
+                    margin-top: 10px;
+               }
+               .used{
+                 background-color: $lightblue;
+                 display: flex;
+                //  justify-content: center;
+                 margin-top: -15px;
+                 p{
+                    background-color: $lightwhite;
+                    border: 2px solid $darkgrey;
+                    // border-radius: 25px;
+                    padding: 5px;
+                    margin: 5px;
+                    margin-bottom: 10px;
+                 }
+               }
+               .used1{
+                background-color: $lightblue;
+                display: flex;
+                margin-top: -5px;
+                p{
+                   background-color: $lightwhite;
+                   border: 2px solid $darkgrey;
+                   padding: 5px;
+                   margin: 5px;
+                }
+              }
+           }
+           .btn1{
+            margin: 0 auto;
+            background-color: $darkgrey;
+            width: 175px;
+            height: 40.6px;
+            margin-top: 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: large;
+            transition: 0.4s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            @include mobile{
+                margin-top: 5px;
+                align-items: center;
+            }
+            .linkInBtn{
+                background-color: $darkgrey;
+            }
+            a{
+                text-decoration: none;
+                color:  $lightblue;
+            }
+        }
+        .btn2{
+            margin: 0 auto;
+            background-color: $lightblue;
+            width: 175px;
+            height: 40.6px;
+            margin-top: 20px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            font-size: large;
+            transition: 0.4s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            @include mobile{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                align-items: center;
+            }
+            .linkInBtn{
+                background-color: $lightblue;
+            }
+            a{
+                text-decoration: none;
+                color:  $darkgrey;
+            }
+        }
+        }
+    }
+}

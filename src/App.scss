@@ -1,0 +1,27 @@
+@import "./global.scss";
+
+*{
+    background-color: #fffff0;
+    scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    scroll-behavior: smooth;
+}
+.app{
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+        .footer{
+            height: 40px;
+        }
+        
+    }
+}

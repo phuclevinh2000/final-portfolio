@@ -1,0 +1,72 @@
+@import "../../global.scss";
+
+.description{
+    background-image: url(../assets/shortdescription/backgroundicontopleft.png),url(../assets/shortdescription/backgroundiconbotright.png);
+    width: 200px;
+    height: 130px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    position: relative;
+    @include mobile{
+        background-image: none;
+        margin-bottom: 0px;
+        margin-top: 250px;
+      }
+    .content{
+        margin-left: 300px;
+        padding-top: 100px;
+        margin-bottom: -70px;
+        font-size: 64px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+        @include mobile{
+            margin-left: 0px;
+            font-size: 40px;
+            text-align: center;
+          }
+        .black{
+            color: $darkgrey;
+            font-weight: 900;
+            .ityped-cursor {
+                animation: blink 1s infinite;
+              }
+      
+              @keyframes blink {
+                  50%{
+                      opacity: 1;
+                  }
+                  100%{
+                      opacity: 0;
+                  }
+              }
+        }
+        .blue{
+            color: $lightblue;
+            
+        }
+    }
+    .btn1{
+        align-items: center;
+        background-color: $darkgrey;
+        width: 175px;
+        height: 40.6px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: large;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        transition: 0.4s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .linkInBtn{
+            background-color: $darkgrey;
+        }
+        a{
+            text-decoration: none;
+            color:  $lightblue;
+        }
+    }
+}

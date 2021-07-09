@@ -1,0 +1,140 @@
+@import "../../global.scss";
+
+.contact{
+    background-image: url(../assets/contact/topleft.png),url(../assets/contact/botright.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    position: relative;
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    @include mobile{
+        flex-direction: column;
+        background-image: none;
+        margin-top: -390px;
+        
+      }
+    .left{
+        flex: 0.9;
+        margin-top: 225px;
+        padding-left: 130px;
+        margin-left: 80px;
+        background: transparent;
+        margin-left: -50px;
+        .title{
+            display: flex;
+            color: $darkgrey;
+            font-size: 64px;
+            font-family: "Halant", sans-serif;
+            margin-bottom: 10px;
+            font-weight: 800;
+            @include mobile{
+                font-size: 40px;
+             }
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: $darkgrey;
+            }
+        }
+        .contactinfo{
+            margin-left: 10px;
+            font-size: 23px;
+            color: $darkgrey;
+            font-weight: 800;
+            font-style: normal;
+            align-items: center;
+            @include mobile{
+                font-size: 20px;
+             }
+        }
+        .mailicon{
+            font-size: 60px;
+            color: $darkgrey;
+            font-weight: bold;
+            font-style: normal;
+            align-items: center;
+        }
+    }
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+        margin-right: 50px;
+        padding-bottom: 30px;
+        background: transparent;
+        form {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            @include mobile{
+                padding-top: 0px;
+            }
+            input {
+                width: 600px;
+                height: 45px;
+                font-size: 20px;
+                border: 2px solid $lightblue;
+                font-style: normal;
+                color: $darkgrey;
+                font-weight: 600;
+                align-items: center;
+                padding-left: 10px;
+                @include mobile{
+                    width: 150%;
+                    margin-left: 20px;
+                }
+            }
+            input:focus{
+                background-color: $lightblue;
+            }
+            
+            textarea {
+                width: 600px;
+                height: 200px;
+                font-size: 25px;
+                border: 2px solid $lightblue;
+                color: $darkgrey;
+                font-weight: 800;
+                align-items: center;
+                padding-left: 10px;
+                @include mobile{
+                    width: 150%;
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+            textarea:focus{
+                background-color: $lightblue;
+            }
+            button {
+                align-items: center;
+                background-color: $darkgrey;
+                width: 140px;
+                height: 40px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: large;
+                color: $lightblue;
+                transition: 0.4s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            span {
+                font-size: 23px;
+                color: $darkgrey;
+                font-weight: bold;
+                transition: all 1s ease;;
+            }
+        }
+    }
+}

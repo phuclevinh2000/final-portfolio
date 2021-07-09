@@ -1,0 +1,119 @@
+@import "../../global.scss";
+
+.whatido{
+    background-image: url(../assets/contact/topleft.png),url(../assets/contact/botright.png);
+    background-position: left top,right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 60px;
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+      }
+    .wrapper{
+        background: transparent;
+        @include mobile{
+            padding-left: 0;
+            align-items: center;
+        }
+    }
+    .title{
+        background-color: transparent;
+       text-align: center;
+       font-size: 35px;
+       color: $darkgrey;
+       font-weight: bold;
+       margin-bottom: -35px;
+       width: 40%;
+       margin: 0 auto;
+       @include mobile{
+            padding-left: 0;
+            align-items: center;
+            font-size: 22px;
+        }
+    }
+    .container{
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+        .icon{
+            @include mobile{
+              height: 60px;
+            }
+        }
+        padding-left: 60px;
+        padding-right: 60px;
+        display: flex;
+        justify-content: space-around;
+        h1{
+            color: $darkgrey;
+            font-size: 54px;
+            display: flex;
+            align-items: center;
+            @include mobile{
+                font-size: 30px;
+                margin-top: -15px;
+              }
+        }
+        p{
+            font-size: 23px;
+            color: $darkgrey;
+            font-weight: bold;
+            font-style: normal;
+            display: table;
+            // text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            text-align: justify;
+            text-justify: inter-word;
+            @include mobile{
+                font-size: 20px;
+                display: table;
+            }
+        }
+        img{
+            height: 100px;
+        }
+        .left{
+            flex: 0.5;
+            max-width: 650px;
+            margin-right: 20px;
+        }
+        .right{
+            flex: 0.5;
+            max-width: 650px;
+        }
+    }
+    .btn1{
+        margin: 0 auto;
+        background-color: $darkgrey;
+        width: 175px;
+        height: 40.6px;
+        margin-top: 50px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        transition: 0.4s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        @include mobile{
+            // display: none;
+        }
+        .linkInBtn{
+            background-color: $darkgrey;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color:  $lightblue;
+            margin-top: 5px;
+        }
+    }
+}
