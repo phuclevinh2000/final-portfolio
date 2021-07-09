@@ -2,6 +2,9 @@
 
 The main pupose of this portfolio project is to make my portfolio, where I can display my skills and informations. After several portfolio, I realized that if I want a good one, I need to design the template first before I code it, design the template before working let you know what you need to do. You can contact me by this email: phuclevinh2000@gmail.com
 
+# note 
+The portfolio work best with 15 inch++ screen
+
 ## Template design
 https://www.canva.com/design/DAEjFaTBewg/ufFyakz8AHLP-JP1--nvtg/view
 
@@ -14,7 +17,7 @@ https://www.canva.com/design/DAEjFaTBewg/ufFyakz8AHLP-JP1--nvtg/view
 - FlexBox
 
 ## Note
-The portfolio is still developing for more function and update for more projects, I am implementing MailChimp to collect visitor's messages.
+The portfolio is still developing for more function and update for more projects, I am implementing MailChimp to collect visitor's messages and mobile responsive.
 
 ## How to run the portfolio
 1. Clone this github resporitory
