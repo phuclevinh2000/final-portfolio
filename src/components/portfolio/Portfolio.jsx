@@ -1,10 +1,10 @@
 import React from 'react'
 import "./portfolio.scss"
 import calculate from "../assets/portfolio/calculator.PNG"
-import customer from "../assets/portfolio/customer.png"
+import customer from "../assets/portfolio/company.png"
 import weatherapp from "../assets/portfolio/weather.png"
 import recipe from "../assets/portfolio/recipe.png"
-import disney from "../assets/portfolio/disney+.png"
+import disney from "../assets/portfolio/disney.png"
 import covid from "../assets/portfolio/covid.png"
 
 const Portfolio = () => {
