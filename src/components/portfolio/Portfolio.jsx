@@ -4,7 +4,8 @@ import calculate from "../assets/portfolio/calculator.PNG"
 import customer from "../assets/portfolio/customer.png"
 import weatherapp from "../assets/portfolio/weather.png"
 import recipe from "../assets/portfolio/recipe.png"
-import bootstrap from "../assets/portfolio/bootstrap5.png"
+import disney from "../assets/portfolio/disney+.png"
+import covid from "../assets/portfolio/covid.png"
 
 const Portfolio = () => {
     return (
@@ -74,18 +75,35 @@ const Portfolio = () => {
                 </div>
                 <div className="code">
                     <div className="box">
-                        <img src={bootstrap} alt="#" />
-                        <p className="usedtitle">Bootstrap Portfolio</p>
+                        <img src={disney} alt="#" />
+                        <p className="usedtitle">Disney+ Clone</p>
                         <div className="used">
-                            <p>Bootstrap 5</p>
-                            <p>CSS</p>
+                            <p>React</p>
+                            <p>SCSS</p>
+                            <p>Firebase</p>
                         </div>
                         <div className="used1">
-                            <p>Html</p>
+                            <p>Redux</p>
                         </div>
                     </div>
-                    <button className="btn1"><a className="linkInBtn" href="https://phucle-portfolio.netlify.app/" alt="#" target="_blank" rel="noreferrer">Live demo</a></button>
-                    <button className="btn2"><a className="linkInBtn" href="https://github.com/phuclevinh2000/phucle-portfolio-bootstrap-5" alt="#" target="_blank" rel="noreferrer">Source code</a></button>
+                    <button className="btn1"><a className="linkInBtn" href="https://disneyclonephucle.herokuapp.com/" alt="#" target="_blank" rel="noreferrer">Live demo</a></button>
+                    <button className="btn2"><a className="linkInBtn" href="https://github.com/phuclevinh2000/Disney-plus-clone" alt="#" target="_blank" rel="noreferrer">Source code</a></button>
+                </div>
+                <div className="code">
+                    <div className="box">
+                        <img src={covid} alt="#" />
+                        <p className="usedtitle">Covid Tracker</p>
+                        <div className="used">
+                            <p>React</p>
+                            <p>SCSS</p>
+                    
+                        </div>
+                        <div className="used1">
+                            <p>Fetch API</p>
+                        </div>
+                    </div>
+                    <button className="btn1"><a className="linkInBtn" href="https://covidtrackerphucle.netlify.app/" alt="#" target="_blank" rel="noreferrer">Live demo</a></button>
+                    <button className="btn2"><a className="linkInBtn" href="https://github.com/phuclevinh2000/Covid-tracker" alt="#" target="_blank" rel="noreferrer">Source code</a></button>
                 </div>
             </div>
         </div>
